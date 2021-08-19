@@ -9,7 +9,7 @@
   padding: 0.2em 0;
   background-color: yellow;
   box-shadow: 6px 6px 8px 0px makerShadow;
-  max-width: 30rem;
+  max-width: 25rem;
 }
 
 .card.dark {

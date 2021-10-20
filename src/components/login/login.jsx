@@ -13,6 +13,16 @@ const Login = ({ authService }) => {
         });
     };
 
+    useEffect(() => {
+        const off = authService.onAuthChange((user) => {
+            user && goToMaker(user.id);
+        });
+        return () => {
+            off();
+        };
+    });
+
+
     const onLogin = (event) => {
         authService //
         .login(event.currentTarget.textContent)

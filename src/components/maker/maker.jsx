@@ -40,6 +40,7 @@ const Maker = ({ FileInput, authService, cardRepository }) => {
         setCards(cards => {
             const updated = {...cards};
             updated[card.id] = card;
+            console.log(updated[card.id]);
             return updated;
         });
         cardRepository.saveCard(userId, card);
